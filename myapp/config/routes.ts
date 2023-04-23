@@ -14,6 +14,18 @@
     ],
   },
   {
+    path: '/test',
+    name: 'test',
+    icon: 'smile',
+    component: './test',
+  },
+  // {
+  //   path: '/editor-page',
+  //   name: 'amisEditor',
+  //   icon: 'smile',
+  //   component: './editorPage',
+  // },
+  {
     path: '/welcome',
     name: 'welcome',
     icon: 'smile',
