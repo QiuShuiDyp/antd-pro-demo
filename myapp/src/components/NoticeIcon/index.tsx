@@ -1,3 +1,6 @@
+/**
+ * TODO: 通知组件，待删除
+ */
 import { getNotices } from '@/services/ant-design-pro/api';
 import { message, Tag } from 'antd';
 import { groupBy } from 'lodash';

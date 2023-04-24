@@ -1,3 +1,6 @@
+/**
+ * 逻辑说明：登出逻辑、用户个人中心模块
+ */
 import { outLogin } from '@/services/ant-design-pro/api';
 import { LogoutOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
 import { Avatar, Menu, Spin } from 'antd';

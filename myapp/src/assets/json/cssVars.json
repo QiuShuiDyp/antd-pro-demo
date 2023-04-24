@@ -1,0 +1,11 @@
+{
+  "--fonts-size-8": "14px",
+  "--borderRadius": "0px",
+  "--primary": "#9B44FD",
+  "--button-primary-default-bg-color": "#9B44FD",
+  "--button-primary-hover-bg-color": "#b66eff",
+  "--colors-brand-5": "#9B44FD",
+  "--colors-brand-6": "#b66eff",
+  "--button-link-default-font-color": "#9B44FD",
+  "--button-link-hover-font-color": "#b66eff"
+}

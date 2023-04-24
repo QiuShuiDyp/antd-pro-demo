@@ -1,0 +1,210 @@
+{
+  "type": "page",
+  "id": "u:8ea5cb727506",
+  "asideResizor": false,
+  "style": {
+    "boxShadow": " 0px 0px 0px 0px transparent"
+  },
+  "pullRefresh": {
+    "disabled": true
+  },
+  "body": [
+    {
+      "type": "crud",
+      "syncLocation": false,
+      "api": {
+        "method": "get",
+        "url": "https://sdk-admin.gemgala-ad.net/test-api/offer/getOfferList",
+        "messages": {}
+      },
+      "columns": [
+        {
+          "name": "id",
+          "label": "ID",
+          "type": "text",
+          "id": "u:e6f9155e0bd3"
+        },
+        {
+          "name": "name",
+          "label": "名字",
+          "type": "text",
+          "id": "u:e481003373d1"
+        },
+        {
+          "type": "text",
+          "label": "测试",
+          "name": "test",
+          "id": "u:fb4044ecb90a"
+        },
+        {
+          "type": "operation",
+          "label": "操作",
+          "buttons": [
+            {
+              "label": "编辑",
+              "type": "button",
+              "actionType": "dialog",
+              "level": "link",
+              "dialog": {
+                "title": "编辑",
+                "body": {
+                  "type": "form",
+                  "api": "xxx/update",
+                  "body": [
+                    {
+                      "name": "id",
+                      "label": "ID",
+                      "type": "input-text",
+                      "id": "u:e0e724ef49d9"
+                    },
+                    {
+                      "name": "name",
+                      "label": "名字",
+                      "type": "input-text",
+                      "id": "u:15308c39929e"
+                    },
+                    {
+                      "label": "测试",
+                      "name": "test",
+                      "type": "input-text",
+                      "id": "u:c53ac0af5373"
+                    }
+                  ],
+                  "id": "u:d23201adaa5f"
+                }
+              },
+              "id": "u:d66859dad7be"
+            },
+            {
+              "label": "查看",
+              "type": "button",
+              "actionType": "dialog",
+              "level": "link",
+              "dialog": {
+                "title": "查看详情",
+                "body": {
+                  "type": "form",
+                  "api": "xxx/update",
+                  "body": [
+                    {
+                      "name": "id",
+                      "label": "ID",
+                      "type": "static",
+                      "id": "u:acbbd881e430"
+                    },
+                    {
+                      "name": "name",
+                      "label": "名字",
+                      "type": "static",
+                      "id": "u:bebf6d11cc38"
+                    },
+                    {
+                      "label": "测试",
+                      "name": "test",
+                      "type": "static",
+                      "id": "u:1b470cee099c"
+                    }
+                  ],
+                  "id": "u:63eac514ab1f"
+                }
+              },
+              "id": "u:2fa529775bc1"
+            },
+            {
+              "type": "button",
+              "label": "删除",
+              "actionType": "ajax",
+              "level": "link",
+              "className": "text-danger",
+              "api": {
+                "method": "post",
+                "url": "https://sdk-admin.gemgala-ad.net/test-api/offer/getOfferList",
+                "messages": {}
+              },
+              "id": "u:c0a68b3bf122",
+              "onEvent": {
+                "click": {
+                  "weight": 0,
+                  "actions": [
+                    {
+                      "args": {
+                        "options": {},
+                        "api": {
+                          "url": "https://sdk-admin.gemgala-ad.net/test-api/offer/deleteOffer",
+                          "method": "post",
+                          "messages": {}
+                        }
+                      },
+                      "outputVar": "responseResult",
+                      "actionType": "ajax"
+                    },
+                    {
+                      "componentId": "u:802b442e326a",
+                      "args": {
+                        "resetPage": true
+                      },
+                      "actionType": "reload",
+                      "data": null
+                    }
+                  ]
+                }
+              },
+              "hiddenOn": "id==1"
+            }
+          ],
+          "id": "u:6aa4c75dbc86",
+          "placeholder": "-",
+          "fixed": ""
+        }
+      ],
+      "bulkActions": [],
+      "itemActions": [],
+      "features": ["create", "filter", "update", "view", "delete"],
+      "filterColumnCount": 3,
+      "headerToolbar": [
+        {
+          "label": "新增",
+          "type": "button",
+          "actionType": "dialog",
+          "level": "primary",
+          "dialog": {
+            "title": "新增",
+            "body": {
+              "type": "form",
+              "api": {
+                "method": "post",
+                "url": "https://sdk-admin.gemgala-ad.net/test-api/offer/getOfferList",
+                "messages": {}
+              },
+              "body": [
+                {
+                  "type": "input-text",
+                  "name": "id",
+                  "label": "ID",
+                  "id": "u:71d3611ce018"
+                },
+                {
+                  "type": "input-text",
+                  "name": "name",
+                  "label": "名字",
+                  "id": "u:41d8dc6f6756"
+                },
+                {
+                  "type": "input-text",
+                  "name": "test",
+                  "label": "测试",
+                  "id": "u:fc0f1c6443d6"
+                }
+              ],
+              "id": "u:df3aaeb1f283"
+            }
+          },
+          "id": "u:3c76465559ca",
+          "className": "rounded-none"
+        },
+        "bulkActions"
+      ],
+      "id": "u:802b442e326a"
+    }
+  ]
+}

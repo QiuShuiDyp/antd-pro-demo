@@ -1,7 +1,10 @@
+/**
+ * TODO: 待删除
+ * 页脚内容，暂留，防止后续用到
+ */
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-components';
 import { useIntl } from 'umi';
-
 const Footer: React.FC = () => {
   const intl = useIntl();
   const defaultMessage = intl.formatMessage({
