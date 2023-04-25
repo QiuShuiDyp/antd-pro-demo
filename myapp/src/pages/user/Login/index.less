@@ -1,5 +1,4 @@
 @import (reference) '~antd/es/style/themes/index';
-
 .container {
   display: flex;
   flex-direction: column;
@@ -27,6 +26,20 @@
     }
     .ant-pro-form-login-header {
       flex-direction: column;
+    }
+    .ant-input-affix-wrapper {
+      &:active {
+        border-color: #782fd6;
+        box-shadow: 0 0 0 2px rgba(155, 68, 253, 0.2);
+      }
+      &:hover {
+        border-color: #782fd6;
+      }
+
+      &:focus {
+        border-color: #782fd6;
+        box-shadow: 0 0 0 2px rgba(155, 68, 253, 0.2);
+      }
     }
   }
 }

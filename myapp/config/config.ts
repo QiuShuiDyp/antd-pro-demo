@@ -50,6 +50,8 @@ export default defineConfig({
     // 只有设置为 variable， 才能使用 configProvide 动态设置主色调
     // https://ant.design/docs/react/customize-theme-variable-cn
     'root-entry-name': 'variable',
+    'primary-color': '#9B44FD',
+    'blue-base': '#9B44FD',
   },
   // esbuild is father build tools
   // https://umijs.org/plugins/plugin-esbuild
